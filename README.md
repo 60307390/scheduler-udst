@@ -2,11 +2,11 @@
 
 ## Installation
 
-- Clone github repository as follows
+- Clone github repository as follows:
 ```bash
 git clone https://github.com/60307390/scheduler-udst.git && cd scheduler-udst
 ```
-- Make virtualenv
+- Make virtualenv:
 
 On Linux:
 ```bash
@@ -26,8 +26,8 @@ pip install -r requirements.txt
 
 ## Usage
 
-- Copy paste plain-text containing all sections (including section name)
-- File would look something like
+- Copy paste plain-text containing all sections (including section name).
+- File would look something like:
 ```
 SSHA 1004
 Ethical Reasoning
@@ -63,7 +63,7 @@ Open Seats 28 of 30
 
 ...
 ```
-- For adding more classes, simply append after a new line in the same format
+- For adding more classes, simply append after a new line in the same format.
 ```
 SSHA 1004
 Ethical Reasoning
@@ -77,7 +77,7 @@ Course Information
 Class Selection
 ...
 ```
-- Run `schedule_helper.py` to view schedules and to make sure schedules are compatible (empty list or 0 in output means incompatile schedule). Will print a list of tuples
+- Run `schedule_helper.py` to view schedules and to make sure schedules are compatible (empty list or 0 in output means incompatile schedule). Will print a list of tuples you can use in the next step.
 
-- Run `schedule_query.py` to input the tuple you want, and it generals a `.xlsx` file in the directory, containing timetable of the selected schedule
-- Also contains query mode to query your schedules using wildcard.
+- Run `schedule_query.py` to input the tuple you want, and it generals a `.xlsx` file in the directory, containing timetable of the selected schedule.
+- Also contains query mode to query your schedules (search through your tuples) using wildcard.
