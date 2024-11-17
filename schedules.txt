@@ -1,0 +1,543 @@
+SSHA 1004
+Ethical Reasoning
+Course Information
+Class Selection
+Select a class option
+7 options
+Option
+Status
+Session
+Class
+Meeting Dates
+Days and Times
+Room
+Instructor
+Seats
+1
+Open
+Regular Academic Session
+LecTheatre - Class 2518 -Section 1
+Lecture - Class 2519 -Section 2
+31/12/2024 - 15/04/2025
+Sunday
+5:00PM to 6:30PM
+Tuesday
+2:00PM to 3:30PM
+01.2.05
+05.1.65
+Rodney Robertson
+Rodney Robertson
+Open Seats 109 of 120
+Open Seats 28 of 30
+
+2
+Open
+Regular Academic Session
+LecTheatre - Class 2518 -Section 1
+Lecture - Class 2520 -Section 3
+31/12/2024 - 15/04/2025
+Sunday
+5:00PM to 6:30PM
+Thursday
+2:00PM to 3:30PM
+01.2.05
+05.2.61
+Rodney Robertson
+Rodney Robertson
+Open Seats 109 of 120
+Open Seats 25 of 30
+
+3
+Open
+Regular Academic Session
+LecTheatre - Class 2518 -Section 1
+Lecture - Class 2521 -Section 4
+31/12/2024 - 15/04/2025
+Sunday
+5:00PM to 6:30PM
+Wednesday
+2:00PM to 3:30PM
+01.2.05
+05.1.65
+Rodney Robertson
+Rodney Robertson
+Open Seats 109 of 120
+Open Seats 29 of 30
+
+4
+Open
+Regular Academic Session
+LecTheatre - Class 2518 -Section 1
+Lecture - Class 2522 -Section 5
+31/12/2024 - 15/04/2025
+Sunday
+5:00PM to 6:30PM
+Monday
+2:00PM to 3:30PM
+01.2.05
+05.1.59
+Rodney Robertson
+Rodney Robertson
+Open Seats 109 of 120
+Open Seats 27 of 30
+
+5
+Open
+Regular Academic Session
+LecTheatre - Class 2523 -Section 6
+Lecture - Class 2524 -Section 7
+31/12/2024 - 15/04/2025
+Monday
+5:00PM to 6:30PM
+Thursday
+6:30PM to 8:00PM
+01.2.05
+05.2.68
+Shawn Ramsey
+Shawn Ramsey
+Open Seats 79 of 90
+Open Seats 30 of 30
+
+6
+Open
+Regular Academic Session
+LecTheatre - Class 2523 -Section 6
+Lecture - Class 2525 -Section 8
+31/12/2024 - 15/04/2025
+Monday
+5:00PM to 6:30PM
+Wednesday
+6:30PM to 8:00PM
+01.2.05
+05.2.68
+Shawn Ramsey
+Shawn Ramsey
+Open Seats 79 of 90
+Open Seats 23 of 30
+
+7
+Open
+Regular Academic Session
+LecTheatre - Class 2523 -Section 6
+Lecture - Class 2526 -Section 9
+31/12/2024 - 15/04/2025
+Monday
+5:00PM to 6:30PM
+Tuesday
+6:30PM to 8:00PM
+01.2.05
+05.2.63
+Shawn Ramsey
+Shawn Ramsey
+Open Seats 79 of 90
+Open Seats 26 of 30
+
+Cancel
+
+
+
+INFS 3104
+Data Structures & Algorithms
+Course Information
+Class Selection
+Select a class option
+3 options
+Option
+Status
+Session
+Class
+Meeting Dates
+Days and Times
+Room
+Instructor
+Seats
+1
+Open
+Regular Academic Session
+Lecture - Class 3075 -Section 1
+Laboratory - Class 3076 -Section 2
+31/12/2024 - 15/04/2025
+Thursday
+10:00AM to 12:00PM
+Monday
+2:00PM to 5:00PM
+01.2.08
+10.2.25
+Robert Ford
+Robert Ford
+Open Seats 28 of 72
+Open Seats 8 of 24
+
+2
+Open
+Regular Academic Session
+Lecture - Class 3075 -Section 1
+Laboratory - Class 3077 -Section 3
+31/12/2024 - 15/04/2025
+Thursday
+10:00AM to 12:00PM
+Tuesday
+2:00PM to 5:00PM
+01.2.08
+10.2.25
+Robert Ford
+Staff
+Open Seats 28 of 72
+Open Seats 20 of 24
+
+3
+Closed
+Regular Academic Session
+Lecture - Class 3075 -Section 1
+Laboratory - Class 3078 -Section 4
+31/12/2024 - 15/04/2025
+Thursday
+10:00AM to 12:00PM
+Sunday
+8:00AM to 11:00AM
+01.2.08
+10.2.28
+Robert Ford
+Ahmad Mansour
+Open Seats 28 of 72
+Closed
+
+INFT 2101
+Networking I
+Course Information
+Class Selection
+Select a class option
+8 options
+Option
+Status
+Session
+Class
+Meeting Dates
+Days and Times
+Room
+Instructor
+Seats
+1
+Open
+Regular Academic Session
+Lecture - Class 3140 -Section 1
+Laboratory - Class 3141 -Section 2
+31/12/2024 - 15/04/2025
+Monday
+2:00PM to 3:30PM
+Wednesday
+2:00PM to 3:30PM
+Tuesday
+2:00PM to 5:00PM
+01.1.06
+01.1.06
+10.1.04
+Yacine Challal
+Yacine Challal
+Yacine Challal
+Open Seats 125 of 130
+Open Seats 17 of 21
+
+2
+Open
+Regular Academic Session
+Lecture - Class 3140 -Section 1
+Laboratory - Class 3142 -Section 3
+31/12/2024 - 15/04/2025
+Monday
+2:00PM to 3:30PM
+Wednesday
+2:00PM to 3:30PM
+Tuesday
+11:00AM to 2:00PM
+01.1.06
+01.1.06
+10.1.14
+Yacine Challal
+Yacine Challal
+Fatma Merabet
+Open Seats 125 of 130
+Open Seats 21 of 21
+
+3
+Open
+Regular Academic Session
+Lecture - Class 3140 -Section 1
+Laboratory - Class 3143 -Section 4
+31/12/2024 - 15/04/2025
+Monday
+2:00PM to 3:30PM
+Wednesday
+2:00PM to 3:30PM
+Thursday
+11:00AM to 2:00PM
+01.1.06
+01.1.06
+10.1.04
+Yacine Challal
+Yacine Challal
+Fatma Merabet
+Open Seats 125 of 130
+Open Seats 20 of 21
+
+4
+Open
+Regular Academic Session
+Lecture - Class 3140 -Section 1
+Laboratory - Class 3145 -Section 6
+31/12/2024 - 15/04/2025
+Monday
+2:00PM to 3:30PM
+Wednesday
+2:00PM to 3:30PM
+Tuesday
+11:00AM to 2:00PM
+01.1.06
+01.1.06
+10.1.04
+Yacine Challal
+Yacine Challal
+Mohamed Khalil
+Open Seats 125 of 130
+Open Seats 21 of 21
+
+5
+Open
+Regular Academic Session
+Lecture - Class 3146 -Section 7
+Laboratory - Class 3149 -Section 10
+31/12/2024 - 15/04/2025
+Monday
+8:00AM to 9:30AM
+Wednesday
+8:00AM to 9:30AM
+Thursday
+8:00AM to 11:00AM
+01.2.08
+01.2.08
+10.2.16
+Abdulhalim Dandoush
+Abdulhalim Dandoush
+Fatma Merabet
+Open Seats 126 of 130
+Open Seats 20 of 20
+
+6
+Open
+Regular Academic Session
+Lecture - Class 3146 -Section 7
+Laboratory - Class 3150 -Section 11
+31/12/2024 - 15/04/2025
+Monday
+8:00AM to 9:30AM
+Wednesday
+8:00AM to 9:30AM
+Tuesday
+8:00AM to 11:00AM
+01.2.08
+01.2.08
+10.2.16
+Abdulhalim Dandoush
+Abdulhalim Dandoush
+Fatma Merabet
+Open Seats 126 of 130
+Open Seats 19 of 20
+
+7
+Open
+Regular Academic Session
+Lecture - Class 3146 -Section 7
+Laboratory - Class 3147 -Section 8
+31/12/2024 - 15/04/2025
+Monday
+8:00AM to 9:30AM
+Wednesday
+8:00AM to 9:30AM
+Wednesday
+10:00AM to 1:00PM
+01.2.08
+01.2.08
+10.2.16
+Abdulhalim Dandoush
+Abdulhalim Dandoush
+Abdulhalim Dandoush
+Open Seats 126 of 130
+Open Seats 17 of 20
+
+8
+Open
+Regular Academic Session
+Lecture - Class 3146 -Section 7
+Laboratory - Class 3148 -Section 9
+31/12/2024 - 15/04/2025
+Monday
+8:00AM to 9:30AM
+Wednesday
+8:00AM to 9:30AM
+Monday
+9:30AM to 12:30PM
+01.2.08
+01.2.08
+10.2.16
+Abdulhalim Dandoush
+Abdulhalim Dandoush
+Fatma Merabet
+Open Seats 126 of 130
+Open Seats 20 of 20
+
+MATH 2020
+Numerical Methods
+Course Information
+Class Selection
+Select a class option
+4 options
+Option
+Status
+Session
+Class
+Meeting Dates
+Days and Times
+Room
+Instructor
+Seats
+1
+Open
+Regular Academic Session
+LecTheatre - Class 3383 -Section 3
+Laboratory - Class 3393 -Section 6
+Lecture - Class 3384 -Section 4
+31/12/2024 - 15/04/2025
+Tuesday
+1:00PM to 2:00PM
+Wednesday
+9:00AM to 10:00AM
+Monday
+9:00AM to 11:00AM
+01.1.06
+10.2.01
+05.2.54
+Ramzan Ali
+Ramzan Ali
+Ramzan Ali
+Open Seats 59 of 60
+Open Seats 30 of 30
+Open Seats 30 of 30
+
+2
+Open
+Regular Academic Session
+LecTheatre - Class 3383 -Section 3
+Laboratory - Class 3393 -Section 6
+Lecture - Class 3395 -Section 8
+31/12/2024 - 15/04/2025
+Tuesday
+1:00PM to 2:00PM
+Wednesday
+9:00AM to 10:00AM
+Monday
+11:00AM to 1:00PM
+01.1.06
+10.2.01
+05.2.35
+Ramzan Ali
+Ramzan Ali
+Ramzan Ali
+Open Seats 59 of 60
+Open Seats 30 of 30
+Open Seats 29 of 30
+
+3
+Open
+Regular Academic Session
+LecTheatre - Class 3383 -Section 3
+Laboratory - Class 3394 -Section 7
+Lecture - Class 3384 -Section 4
+31/12/2024 - 15/04/2025
+Tuesday
+1:00PM to 2:00PM
+Wednesday
+10:00AM to 11:00AM
+Monday
+9:00AM to 11:00AM
+01.1.06
+10.2.01
+05.2.54
+Ramzan Ali
+Ramzan Ali
+Ramzan Ali
+Open Seats 59 of 60
+Open Seats 29 of 30
+Open Seats 30 of 30
+
+4
+Open
+Regular Academic Session
+LecTheatre - Class 3383 -Section 3
+Laboratory - Class 3394 -Section 7
+Lecture - Class 3395 -Section 8
+31/12/2024 - 15/04/2025
+Tuesday
+1:00PM to 2:00PM
+Wednesday
+10:00AM to 11:00AM
+Monday
+11:00AM to 1:00PM
+01.1.06
+10.2.01
+05.2.35
+Ramzan Ali
+Ramzan Ali
+Ramzan Ali
+Open Seats 59 of 60
+Open Seats 29 of 30
+Open Seats 29 of 30
+
+SOFT 2101
+Software Engineering Principles
+Course Information
+Class Selection
+Select a class option
+2 options
+Option
+Status
+Session
+Class
+Meeting Dates
+Days and Times
+Room
+Instructor
+Seats
+1
+Open
+Regular Academic Session
+Lecture - Class 3203 -Section 1
+Laboratory - Class 3204 -Section 2
+31/12/2024 - 15/04/2025
+Sunday
+8:00AM to 10:00AM
+Monday
+10:00AM to 1:00PM
+10.2.26
+10.2.12
+Reda Bendraou
+Reda Bendraou
+Open Seats 24 of 24
+Open Seats 24 of 24
+
+2
+Open
+Regular Academic Session
+Lecture - Class 3205 -Section 3
+Laboratory - Class 3206 -Section 4
+31/12/2024 - 15/04/2025
+Monday
+8:00AM to 10:00AM
+Sunday
+2:00PM to 5:00PM
+10.2.27
+10.2.26
+Reda Bendraou
+Reda Bendraou
+Open Seats 17 of 24
+Open Seats 17 of 24
+
