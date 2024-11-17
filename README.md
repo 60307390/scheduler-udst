@@ -7,6 +7,7 @@
 git clone https://github.com/60307390/scheduler-udst.git && cd scheduler-udst
 ```
 - Make virtualenv
+
 On Linux:
 ```bash
 python -m venv venv
