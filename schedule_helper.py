@@ -61,7 +61,7 @@ def get_schedule_as_dict():
                         times.append(time)
 
                 schedule_dict[current_class][current_section].append({day: [times[0], times[1]]})  
-    print(schedule_dict)
+    # print(schedule_dict)
     return schedule_dict
 
 def depreciated_get_compatible_combinations(schedules):
@@ -158,18 +158,14 @@ def get_schedule_matrix(schedule):
                         sch_matrix[row][col] = sch_index+1
     return sch_matrix
 
-def write_to_excel(sub_schedules):
-    pass
-    
-        
-        
-#wb = Workbook()
-#ws = wb.active
+
 if __name__ == "__main__":
     schedules = get_schedule_as_dict()
     comb_list,comb_tuple = get_compatible_combinations(schedules)
     for schedule in comb_list:
         schedule_matrix = get_schedule_matrix(schedule)
 
-    print(len(comb_list))
-    print(comb_tuple)
+    print('-'*50)
+    print("Number of compatible combinations: " + str(len(comb_list)))
+    print("Compatible combinations: " + str(comb_tuple))
+    print('-'*50)

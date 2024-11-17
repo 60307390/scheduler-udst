@@ -2,3 +2,4 @@ hidden/
 venv/
 __pycache__/
 *.xlsx
+schedules.txt

@@ -101,7 +101,7 @@ def write_sch_to_excel(ws: Workbook, schedule, sch_matrix: list):
     wb.save("schedule_timings.xlsx")
 
 def wildcard_query_multiple(comb_list,comb_tuple):
-    print("YOU ARE NOW IN QUERY MODE.\nThat combination is not compatible; so, try querying possible combinations (like '1 1 1 *')")
+    print("\nYOU ARE NOW IN QUERY MODE.\nThat combination is not compatible; so, try querying possible combinations (like '1 1 1 *')")
     repeat = True
     while repeat:
         print("The combination you entered above is not a valid combination. Please try again in query mode.")
@@ -135,7 +135,7 @@ def get_schedules_for_query(sch_query_tuple,comb_list,comb_tuple):
                 count += 1
             if count == num_count:
                 if len(queried_schedules) == 0:
-                    print("Here are the combinations that work: ")
+                    print("\nHere are the combinations that work: ")
                 print(combination)
                 queried_schedules.append((comb_list[comb_tuple.index(combination)],combination))
     return queried_schedules
