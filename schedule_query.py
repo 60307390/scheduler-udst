@@ -4,6 +4,12 @@ from openpyxl.styles import PatternFill
 from openpyxl.styles.borders import Border, Side, BORDER_THIN
 
 import sys
+import signal
+
+def exit_handler(signum,frame):
+    print("\nExiting...")
+    print("Process exit with code " + str(signum))
+    sys.exit(0)
 
 def index_to_time(N):
     suffix = 'AM'
@@ -34,8 +40,8 @@ def tuple_to_time(start, end):
     return f"{start_time}-{end_time}"
     
 
-def write_sch_to_excel(ws: Workbook, schedule, sch_matrix: list):
-    legend = list(schedules)
+def write_sch_to_excel(wb:Workbook, ws, schedule, sch_matrix: list):
+    legend = list(schedule)
     thin_border = Border(
         left=Side(border_style=BORDER_THIN, color='D8D8D8'),
         right=Side(border_style=BORDER_THIN, color='D8D8D8'),
@@ -100,11 +106,11 @@ def write_sch_to_excel(ws: Workbook, schedule, sch_matrix: list):
         cell.value = legend[i]
     wb.save("schedule_timings.xlsx")
 
+
 def wildcard_query_multiple(comb_list,comb_tuple):
-    print("\nYOU ARE NOW IN QUERY MODE.\nThat combination is not compatible; so, try querying possible combinations (like '1 1 1 *')")
+    print("\nYOU ARE NOW IN QUERY MODE. Try querying possible combinations (like '1 1 1 *')")
     repeat = True
     while repeat:
-        print("The combination you entered above is not a valid combination. Please try again in query mode.")
         wildcard_str = input("Enter course options: ").split(' ')
         if len(wildcard_str) == 1 and wildcard_str[0] == '':
             sys.exit()
@@ -123,6 +129,9 @@ def wildcard_query_multiple(comb_list,comb_tuple):
         if len(get_schedules_for_query(sch_tuple,comb_list,comb_tuple)) > 0:
             repeat = False
             break
+        else:
+            print("The combination you entered above is not a valid combination. Please try again in query mode.")
+
 
 
 def get_schedules_for_query(sch_query_tuple,comb_list,comb_tuple):
@@ -138,6 +147,7 @@ def get_schedules_for_query(sch_query_tuple,comb_list,comb_tuple):
                     print("\nHere are the combinations that work: ")
                 print(combination)
                 queried_schedules.append((comb_list[comb_tuple.index(combination)],combination))
+                break   # New addition, test
     return queried_schedules
 
 def depreciated_wildcard_query(comb_tuple):
@@ -187,14 +197,7 @@ def depreciated_wildcard_query(comb_tuple):
                     #######repeat = False
                     print(tuple_i)
 
-
-
-
-if __name__ == "__main__":
-
-    schedules = get_schedule_as_dict()
-    comb_list, comb_tuple = get_compatible_combinations(schedules)
-
+def main_schedule_query(schedules, comb_list, comb_tuple):
     print("Query particular schedules from txt file")
     print("Separate input of course options by spaces (like \"1 1 1 1\")")
     in_str = input("Enter course options: ")
@@ -211,10 +214,21 @@ if __name__ == "__main__":
     if sch_tuple in comb_tuple:
         schedule = comb_list[comb_tuple.index(sch_tuple)]
         sch_matrix = get_schedule_matrix(schedule)
+        print("Selected schedule: ")
         print(schedule)
-        print(sch_matrix)
+        # print(sch_matrix)
         wb = Workbook()
         ws = wb.active
-        write_sch_to_excel(ws,schedule,sch_matrix)
+        write_sch_to_excel(wb,ws,schedule,sch_matrix)
     else:
+        print("\nThat schedule is not compatible. Entering query mode...")
         wildcard_query_multiple(comb_list,comb_tuple)
+
+signal.signal(signal.SIGINT, exit_handler)
+
+if __name__ == "__main__":
+
+    schedules = get_schedule_as_dict()
+    comb_list, comb_tuple = get_compatible_combinations(schedules)
+
+    main_schedule_query(schedules, comb_list, comb_tuple)

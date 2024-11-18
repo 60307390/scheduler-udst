@@ -158,10 +158,9 @@ def get_schedule_matrix(schedule):
                         sch_matrix[row][col] = sch_index+1
     return sch_matrix
 
-
-if __name__ == "__main__":
-    schedules = get_schedule_as_dict()
-    comb_list,comb_tuple = get_compatible_combinations(schedules)
+def main_print_schedules(schedules, comb_list, comb_tuple):
+    # schedules = get_schedule_as_dict()
+    # comb_list,comb_tuple = get_compatible_combinations(schedules)
     for schedule in comb_list:
         schedule_matrix = get_schedule_matrix(schedule)
 
@@ -169,3 +168,8 @@ if __name__ == "__main__":
     print("Number of compatible combinations: " + str(len(comb_list)))
     print("Compatible combinations: " + str(comb_tuple))
     print('-'*50)
+
+if __name__ == "__main__":
+    schedules = get_schedule_as_dict()
+    comb_list,comb_tuple = get_compatible_combinations(schedules)
+    main_print_schedules(schedules, comb_list, comb_tuple)

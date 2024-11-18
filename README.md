@@ -77,7 +77,12 @@ Course Information
 Class Selection
 ...
 ```
-- Run `schedule_helper.py` to view schedules and to make sure schedules are compatible (empty list or 0 in output means incompatile schedule). Will print a list of tuples you can use in the next step.
-
-- Run `schedule_query.py` to input the tuple you want, and it generals a `.xlsx` file in the directory, containing timetable of the selected schedule.
+- Run the program with `--list-schedules` to view schedules and to make sure schedules are compatible (empty list or 0 in output means incompatile schedule). Will print a list of tuples you can use in the next step.
+```bash
+python scheduler.py --list-schedules
+```
+- To input the tuple you want, run the script with `python scheduler.py` and it generals a `.xlsx` file in the directory, containing timetable of the selected schedule.
 - Also contains query mode to query your schedules (search through your tuples) using wildcard.
+```bash
+python scheduler.py --query
+```
