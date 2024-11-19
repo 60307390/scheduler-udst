@@ -108,7 +108,8 @@ def write_sch_to_excel(wb:Workbook, ws, schedule, sch_matrix: list):
         cell = ws.cell(row=i+4, column=9)
         cell.fill = PatternFill(start_color=colors[i+1], end_color=colors[i+1], fill_type="solid")
         cell = ws.cell(row=i+4, column=10)
-        cell.value = legend[i]
+        section_no = list(schedule[legend[i]])[0]
+        cell.value = f"{legend[i]} - {section_no}"
     wb.save("schedule_timings.xlsx")
 
 
