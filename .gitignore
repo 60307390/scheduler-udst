@@ -2,4 +2,5 @@ hidden/
 venv/
 __pycache__/
 *.xlsx
+.~lock*
 schedules.txt

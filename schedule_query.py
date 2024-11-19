@@ -2,6 +2,7 @@ from schedule_helper import *
 from openpyxl import Workbook
 from openpyxl.styles import PatternFill
 from openpyxl.styles.borders import Border, Side, BORDER_THIN
+from openpyxl.styles import Alignment
 
 import sys
 import signal
@@ -57,6 +58,10 @@ def write_sch_to_excel(wb:Workbook, ws, schedule, sch_matrix: list):
         5: "707EFF",  # Dark Blue
         6: "FF70BF"   # Pink
     }
+    for i in range(len(DAYS)):
+        cell = ws.cell(row=1, column=i+2)
+        cell.value = DAYS[i][:3]
+        cell.alignment = Alignment(horizontal="center")
     
     for i in range(len(sch_matrix)):
         cell = ws.cell(row=i+2, column=1)
