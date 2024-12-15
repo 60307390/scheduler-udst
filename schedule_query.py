@@ -5,6 +5,7 @@ from openpyxl.styles.borders import Border, Side, BORDER_THIN
 from openpyxl.styles import Alignment
 
 import sys
+from subprocess import Popen
 import signal
 
 def exit_handler(signum,frame):
@@ -139,7 +140,6 @@ def wildcard_query_multiple(comb_list,comb_tuple):
             print("The combination you entered above is not a valid combination. Please try again in query mode.")
 
 
-
 def get_schedules_for_query(sch_query_tuple,comb_list,comb_tuple):
     queried_schedules = []
     num_count = len(sch_query_tuple) - sch_query_tuple.count('*')
@@ -155,6 +155,7 @@ def get_schedules_for_query(sch_query_tuple,comb_list,comb_tuple):
                 queried_schedules.append((comb_list[comb_tuple.index(combination)],combination))
                 break   # New addition, test
     return queried_schedules
+
 
 def depreciated_wildcard_query(comb_tuple):
     repeat = True
@@ -203,7 +204,20 @@ def depreciated_wildcard_query(comb_tuple):
                     #######repeat = False
                     print(tuple_i)
 
-def main_schedule_query(schedules, comb_list, comb_tuple):
+
+def open_excel_sheet(program: str) -> None:
+    try:
+        # TODO Possibly include stdout=subprocess.PIPE, stderr=subprocess.STDOUT to suppress errors?
+        process = Popen([program, "schedule_timings.xlsx"])
+    except FileNotFoundError as fe:
+        print("\nProgram not found. Please provide proper path")
+        print(fe)
+    except Exception as e:
+        print("Something went wrong")
+        print(e)
+
+
+def main_schedule_query(schedules, comb_list: list, comb_tuple: list[tuple]) -> bool:
     print("Query particular schedules from txt file")
     print("Separate input of course options by spaces (like \"1 1 1 1\")")
     in_str = input("Enter course options: ")
@@ -226,9 +240,13 @@ def main_schedule_query(schedules, comb_list, comb_tuple):
         wb = Workbook()
         ws = wb.active
         write_sch_to_excel(wb,ws,schedule,sch_matrix)
+        # if openWith != "":
+        #     open_excel_sheet(program=openWith)       
+        return True
     else:
         print("\nThat schedule is not compatible. Entering query mode...")
         wildcard_query_multiple(comb_list,comb_tuple)
+        return False
 
 signal.signal(signal.SIGINT, exit_handler)
 
