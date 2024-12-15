@@ -26,7 +26,7 @@ pip install -r requirements.txt
 
 ## Usage
 
-- Copy paste to plain-text (**must be named**) `schedules.txt` containing all sections (including section name).
+- Copy paste to plain-text (**must be named** `schedules.txt`) containing all sections (including section name).
 - File would look something like:
 ```
 SSHA 1004
