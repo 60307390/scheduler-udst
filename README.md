@@ -82,11 +82,11 @@ Class Selection
 python scheduler.py --list-schedules
 ```
 - To input the tuple you want, run the script normally as `python scheduler.py` and it generals a `.xlsx` file in the directory, containing timetable of the selected schedule.
-- NEW: To open the output automatically with the program, can use `--open-with` flag and pass in the program's name/path as an argument. If given a valid schedule, it will open the excel sheet automatically. NOTE: not tested in Windows.
+- *NEW*: To open the output automatically with the program, can use `--open-with` flag and pass in the program's name/path as an argument. If given a valid schedule, it will open the excel sheet automatically. (*NOTE: not tested in Windows*).
 ```bash
 python scheduler.py --open-with libreoffice
 ```
-- Also contains query mode to query your schedules (search through your tuples) using wildcard.
+- Also contains query mode to query your schedules (search through your tuples) using the wildcard `*`.
 ```bash
 python scheduler.py --query
 ```
