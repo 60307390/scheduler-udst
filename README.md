@@ -77,6 +77,10 @@ Course Information
 Class Selection
 ...
 ```
+- To open the output automatically with the program, can use `--open-with` flag and pass in the program's name/path as an argument. If given a valid schedule, it will open the excel sheet automatically. NOTE: not tested in Windows.
+```bash
+python scheduler.py --open-with libreoffice
+```
 - Run the program with `--list-schedules` to view schedules and to make sure schedules are compatible (empty list or 0 in output means incompatile schedule). Will print a list of tuples you can use in the next step.
 ```bash
 python scheduler.py --list-schedules
