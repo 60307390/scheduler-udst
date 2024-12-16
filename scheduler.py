@@ -3,6 +3,7 @@ import schedule_query as sch_query
 import argparse
 
 if __name__ == "__main__":
+
     parser = argparse.ArgumentParser()
     parser.add_argument(
         "--list-schedules", "--get-schedules", "-ls",
@@ -18,10 +19,19 @@ if __name__ == "__main__":
         "--open-with", "--open", "-o",
         help="open with specified program"
     )
+    parser.add_argument(
+        "--schedule", "--sch", "-s",
+        help="uses the provided .txt file for schedule (default: schedules.txt)"
+    )
     args = parser.parse_args()
 
-    schedules = sch_help.get_schedule_as_dict()
+    file = "schedules.txt"
+    if args.schedule:
+        file = args.schedule
+
+    schedules = sch_help.get_schedule_as_dict(file)
     comb_list, comb_tuple = sch_help.get_compatible_combinations(schedules)
+
     if args.list_schedules:
         sch_help.main_print_schedules(schedules, comb_list, comb_tuple)
     elif args.query:

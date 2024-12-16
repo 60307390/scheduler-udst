@@ -1,17 +1,17 @@
 from collections.abc import MutableMapping
-#from openpyxl import Workbook
+# from openpyxl import Workbook
 import itertools
 import numpy
 import pandas as pd
 
-def flatten_dict(d: MutableMapping, sep: str= '.') -> MutableMapping:
+def flatten_dict(d: MutableMapping, sep: str = '.') -> MutableMapping:
     [flat_dict] = pd.json_normalize(d, sep=sep).to_dict(orient='records')
     return flat_dict
 
 # def avg_of_two(N):
 #     return sum(N)/2
 
-def matrix_transpose(A):
+def matrix_transpose(A: list[list]):
     'Returns the transpose Aᵀ, given a matrix A'
     A_T = []
     for i in range(len(A[0])):  # Given A is a rectangular matrix
@@ -22,17 +22,19 @@ def matrix_transpose(A):
             A_T[j].append(A[i][j])
     return A_T
 
+
 DAYS = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday"]
 
-def get_schedule_as_dict():
+def get_schedule_as_dict(file: str):
     schedule_dict = {}
 
     # "class" : {section_no: [ {"Sunday"}:[start, end]}, {"Monday"}:[start,end] ] } ]
-    with open('schedules.txt', 'r') as f:
+    # with open('schedules.txt', 'r') as f:
+    with open(file, 'r') as f:
         lines = f.readlines()
         current_class = ""
         current_section = 0
-        
+
         for i in range(len(lines)):
             # "class"
             line = lines[i].strip()
@@ -40,12 +42,11 @@ def get_schedule_as_dict():
                 class_name = line[:4] + line[5:]
                 schedule_dict[class_name] = {}
                 current_class = class_name
-            
+
             # section_no
             if len(line) <= 2 and line.isdigit():
                 current_section = int(line)
                 schedule_dict[current_class][current_section] = []
-                
 
             # append time per day of week
             if line in DAYS:
@@ -60,9 +61,10 @@ def get_schedule_as_dict():
                     else:
                         times.append(time)
 
-                schedule_dict[current_class][current_section].append({day: [times[0], times[1]]})  
+                schedule_dict[current_class][current_section].append({day: [times[0], times[1]]})
     # print(schedule_dict)
     return schedule_dict
+
 
 def depreciated_get_compatible_combinations(schedules):
     course_options = []
@@ -71,7 +73,7 @@ def depreciated_get_compatible_combinations(schedules):
         course_options.append([])
         course_options[k].extend(list(schedules[i]))
         k += 1
-    
+
     comb_list = []
     comb_tuple = []
     cartesian_product = itertools.product(*course_options)
@@ -104,6 +106,7 @@ def depreciated_get_compatible_combinations(schedules):
             comb_list.append(schedule_opts)
     return comb_list, comb_tuple
 
+
 def is_compatible(section1, section2):
     for i in section1:
         for j in section2:
@@ -116,10 +119,11 @@ def is_compatible(section1, section2):
                     return False
     return True
 
+
 def get_compatible_combinations(schedules):
     courses = list(schedules)
     sections = [list(schedules[course].keys()) for course in courses]
-    
+
     cartesian_combinations = list(itertools.product(*sections))
 
     comb_list = []
@@ -142,6 +146,7 @@ def get_compatible_combinations(schedules):
             comb_list.append(comb_opts)
     return comb_list, comb_tuple
 
+
 def get_schedule_matrix(schedule):
     sch_matrix = numpy.zeros((12*2+1,5), dtype=numpy.int8).tolist()
     flatenned_schedule = flatten_dict(schedule)
@@ -154,7 +159,7 @@ def get_schedule_matrix(schedule):
                     s_i, e_i = timings[day][0], timings[day][1]
                     for j in range(int(2*s_i), int(2*e_i)):
                         row = int(2*((j/2)-8))
-                        #print(row, col)
+                        # print(row, col)
                         sch_matrix[row][col] = sch_index+1
     return sch_matrix
 
@@ -169,6 +174,7 @@ def main_print_schedules(schedules, comb_list, comb_tuple):
     print("Number of compatible combinations: " + str(len(comb_list)))
     print("Compatible combinations: " + str(comb_tuple))
     print('-'*50)
+
 
 if __name__ == "__main__":
     schedules = get_schedule_as_dict()

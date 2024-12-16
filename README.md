@@ -26,7 +26,7 @@ pip install -r requirements.txt
 
 ## Usage
 
-- Copy paste to plain-text (**must be named** `schedules.txt`) containing all sections (including section name).
+- Copy paste to a plain-text (program uses `schedules.txt` as **default**) containing all sections (including section name).
 - File would look something like:
 ```
 SSHA 1004
@@ -77,16 +77,24 @@ Course Information
 Class Selection
 ...
 ```
+- By **default**, the program uses `schedules.txt` as the input file. However, if you want to use other files, you can pass in the path with the `--schedule` flag
+```bash
+python scheduler.py --schedule "path/to/custom-schedules.txt"/[PATH TO TXT]
+python scheuler.py -s [PATH]
+```
 - Run the program with `--list-schedules` to view schedules and to make sure schedules are compatible (empty list or 0 in output means incompatile schedule). Will print a list of tuples you can use in the next step.
 ```bash
 python scheduler.py --list-schedules
+python scheduler.py -ls
 ```
 - To input the tuple you want, run the script normally as `python scheduler.py` and it generals a `.xlsx` file in the directory, containing timetable of the selected schedule.
 - *NEW*: To open the output automatically with the program, can use `--open-with` flag and pass in the program's name/path as an argument. If given a valid schedule, it will open the excel sheet automatically. (*NOTE: not tested in Windows*).
 ```bash
-python scheduler.py --open-with libreoffice
+python scheduler.py --open-with libreoffice/[PATH TO PROGRAM]
+python scheduler.py -o [PATH]
 ```
 - Also contains query mode to query your schedules (search through your tuples) using the wildcard `*`.
 ```bash
 python scheduler.py --query
+python scheduler.py -q
 ```
