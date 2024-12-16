@@ -81,17 +81,17 @@ Class Selection
 
 ### Program Usage
 ```
-usage: scheduler.py [-h] [--list-schedules] [--query] [--open-with OPEN_WITH] [--schedule SCHEDULE]
+usage: scheduler.py [-h] [--list-schedules] [--query] [--schedule SCHEDULE] [--open-with OPEN_WITH]
 
 options:
   -h, --help            show this help message and exit
   --list-schedules, --get-schedules, -ls
                         print compatible schedules
   --query, -q           go directly into query mode
-  --open-with OPEN_WITH, --open OPEN_WITH, -o OPEN_WITH
-                        open with specified program
   --schedule SCHEDULE, --sch SCHEDULE, -s SCHEDULE
                         uses the provided .txt file for schedule (default: schedules.txt)
+  --open-with OPEN_WITH, --open OPEN_WITH, -o OPEN_WITH
+                        open with specified program
 ```
 
 

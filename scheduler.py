@@ -16,12 +16,12 @@ if __name__ == "__main__":
         action="store_true"
     )
     parser.add_argument(
-        "--open-with", "--open", "-o",
-        help="open with specified program"
-    )
-    parser.add_argument(
         "--schedule", "--sch", "-s",
         help="uses the provided .txt file for schedule (default: schedules.txt)"
+    )
+    parser.add_argument(
+        "--open-with", "--open", "-o",
+        help="open with specified program"
     )
     args = parser.parse_args()
 
