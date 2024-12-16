@@ -78,7 +78,7 @@ Class Selection
 ...
 ```
 
-- Help Text
+- Help Text: Generates when `scheduler.py` with `-h` flag.
 ```
 usage: scheduler.py [-h] [--list-schedules] [--query] [--open-with OPEN_WITH] [--schedule SCHEDULE]
 
