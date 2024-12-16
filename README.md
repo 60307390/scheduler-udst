@@ -94,6 +94,7 @@ options:
                         uses the provided .txt file for schedule (default: schedules.txt)
 ```
 
+
 - By **default**, the program uses `schedules.txt` as the input file. However, if you want to use other files, you can pass in the path with the `--schedule` flag
 ```bash
 python scheduler.py --schedule "path/to/custom-schedules.txt"/[PATH TO TXT]
