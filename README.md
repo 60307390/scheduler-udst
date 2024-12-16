@@ -26,6 +26,7 @@ pip install -r requirements.txt
 
 ## Usage
 
+### Text File Format
 - Copy paste to a plain-text (program uses `schedules.txt` as **default**) containing all sections (including section name).
 - File would look something like:
 ```
@@ -78,7 +79,7 @@ Class Selection
 ...
 ```
 
-- Help Text: Generates when `scheduler.py` with `-h` flag.
+### Program Usage
 ```
 usage: scheduler.py [-h] [--list-schedules] [--query] [--open-with OPEN_WITH] [--schedule SCHEDULE]
 
