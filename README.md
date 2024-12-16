@@ -77,24 +77,36 @@ Course Information
 Class Selection
 ...
 ```
+
+- Help Text
+```
+usage: scheduler.py [-h] [--list-schedules] [--query] [--open-with OPEN_WITH] [--schedule SCHEDULE]
+
+options:
+  -h, --help            show this help message and exit
+  --list-schedules, --get-schedules, -ls
+                        print compatible schedules
+  --query, -q           go directly into query mode
+  --open-with OPEN_WITH, --open OPEN_WITH, -o OPEN_WITH
+                        open with specified program
+  --schedule SCHEDULE, --sch SCHEDULE, -s SCHEDULE
+                        uses the provided .txt file for schedule (default: schedules.txt)
+```
+
 - By **default**, the program uses `schedules.txt` as the input file. However, if you want to use other files, you can pass in the path with the `--schedule` flag
 ```bash
 python scheduler.py --schedule "path/to/custom-schedules.txt"/[PATH TO TXT]
-python scheuler.py -s [PATH]
 ```
 - Run the program with `--list-schedules` to view schedules and to make sure schedules are compatible (empty list or 0 in output means incompatile schedule). Will print a list of tuples you can use in the next step.
 ```bash
 python scheduler.py --list-schedules
-python scheduler.py -ls
 ```
 - To input the tuple you want, run the script normally as `python scheduler.py` and it generals a `.xlsx` file in the directory, containing timetable of the selected schedule.
 - *NEW:* To open the output automatically with a program, can use `--open-with` flag and pass in the program's name/path as an argument. If given a valid schedule, it will open the excel sheet automatically. (*NOTE: not tested in Windows*).
 ```bash
 python scheduler.py --open-with libreoffice/[PATH TO PROGRAM]
-python scheduler.py -o [PATH]
 ```
 - Also contains query mode to query your schedules (search through your tuples) using the wildcard `*`.
 ```bash
 python scheduler.py --query
-python scheduler.py -q
 ```
