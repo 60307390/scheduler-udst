@@ -27,7 +27,7 @@ pip install -r requirements.txt
 ## Usage
 
 ### Text File Format
-- Copy paste to a plain-text (program uses `schedules.txt` as **default**) containing all sections (including section name).
+- Copy paste to a plain-text file (program uses `schedules.txt` as **default**) containing all sections (including section name).
 - File would look something like:
 ```
 SSHA 1004
