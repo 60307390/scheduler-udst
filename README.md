@@ -108,7 +108,17 @@ python scheduler.py --list-schedules
 ```bash
 python scheduler.py --open-with libreoffice/[PATH TO PROGRAM]
 ```
-- Also contains query mode to query your schedules (search through your tuples) using the wildcard `*`.
+- Also contains query mode to query your schedules (search through your tuples) using the wildcard `*`. For example:
 ```bash
 python scheduler.py --query
+```
+```
+Enter course options: 2 * * * *
+
+Here are the combinations that work: 
+(2, 1, 6, 1, 1)
+(2, 1, 7, 1, 1)
+(2, 2, 6, 1, 1)
+(2, 2, 7, 1, 1)
+(2, 3, 1, 1, 2)
 ```
